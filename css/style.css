@@ -1,0 +1,29 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenitore-principale{
+    display: flex;
+    height: calc(100vh - 50px);
+}
+.sidebar{
+    background-color: peru;
+    width: 20%;
+}
+.section-centrale{
+    width: 80%;
+    background-color: #1b1b1b;
+}
+header{
+    background-color: blue;
+    height: 40px;
+    width: 100%;
+}
+/* Footer */
+footer{
+    background-color: hotpink;
+    height: 50px;
+}
