@@ -24,7 +24,8 @@ body{
 /* Section centrale */
 .section-centrale{
     width: 100%;
-    background-color: #222427;
+    background-color: #151A22;
+    overflow-y: auto;
 }
 
 /* Header */
@@ -71,11 +72,25 @@ nav ul li a{
 }
 
 /* Sezione Recenti */
-.recenti{
+.contenuto-img-sopra, .contenuto-img-centro{
     color: white;
     padding: 30px 20px;
 }
-
+.contenuto-img-sopra .contenitore-img{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.contenuto-img-centro .contenitore-img{
+    display: flex;
+    padding-top: 30px;
+}
+.contenitore-recenti{
+    height: 190px;
+    width: 190px;
+    background-color: red;
+    border: 1px solid black;
+}
 
 /* Footer */
 footer{
