@@ -26,8 +26,8 @@ body{
     z-index: 99;
     position: relative;
 }
-/* /Logo Spotify */
 
+/* Sidebar top */
 .sidebar-top li a{
     color: grey;
     text-decoration: none;
@@ -45,18 +45,44 @@ body{
 .barra-verde{
     border-left: 2px solid rgb(173, 255, 47);
 }
-.playlist-sidebar{
-    height: 300px;
+/* Sidebar playlist */
+
+/* CREARE OVERFLOW-Y */
+/* .playlist-sidebar{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     overflow-y: auto;
-}
+} */
 .playlist-sidebar h3{
     color: white;
     margin: 20px;
 }
-.playlist-sidebar div, .playlist-sidebar ul li{
+.playlist-sidebar .creazione-playlist, .playlist-sidebar ul li{
     color: grey;
     margin: 10px 20px;
     list-style: none;
+}
+.creazione-playlist{
+    font-size: 15px;
+    font-weight: 600;
+}
+.creazione-playlist div:first-child{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    background-color: lightgray;
+    color: black;
+    margin-right: 5px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 35px;
+}
+.creazione-playlist div:last-child{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Sidebar bottom */
@@ -67,6 +93,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
+    background-color: black;
 }
 .sidebar-bottom span{
     font-weight: 800;
@@ -173,15 +200,37 @@ footer{
     /* background-color: #1b1b1b; */
     height: 80px;
     z-index: 99;
-    position: relative;
     display: flex;
+    position: relative;
 }
-.footer-left, .footer-right{
+.contenitore-footer-sinistra, .footer-right{
     height: 80px;
     width: 20%;
 }
-.footer-left{
-    background-color:hotpink;
+.contenitore-footer-sinistra{
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+}
+.contenitore-footer-sinistra img{
+    width: 40px;
+    margin: 0 20px;
+}
+.contenitore-footer-sinistra h4{
+    font-size: 10px;
+    color: white;
+}
+.contenitore-footer-sinistra .brano div{
+    color: #646464;
+    font-size: 10px;
+    font-weight: 600;
+}
+.brano{
+    margin-right: 40px;
+}
+.contenitore-footer-sinistra i{
+    color: #646464;
+    margin: 0 8px;
 }
 .footer-center{
     height: 80px;
