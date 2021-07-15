@@ -200,17 +200,15 @@ nav ul li a{
 
 /* Footer */
 footer{
-    /* background-color: #1b1b1b; */
+    background-color: #282828;
     height: 80px;
     z-index: 99;
     display: flex;
+    justify-content: space-between;
     position: relative;
 }
 /* Footer sinistra */
 .contenitore-footer-sinistra, .contenitore-footer-destra{
-    height: 80px;
-    width: 20%;
-    background-color: #282828;
     display: flex;
     align-items: center;
 }
@@ -237,23 +235,46 @@ footer{
 }
 
 /* Footer centrale */
-.footer-center{
+.contenitore-footer-centrale{
     height: 80px;
-    width: 60%;
-    background-color: orange;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
+.contenitore-footer-centrale-sopra .fa-play-circle{
+    font-size: 23px;
+}
+.contenitore-footer-centrale-sopra{
+    display: flex;
+    align-items: center;
+}
+.contenitore-footer-centrale-sotto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.minuti{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+.contenitore-footer-centrale-sotto .volume{
+    width: 400px;
+}
 /* Footer destra */
-.contenitore-footer-destra i{
+.contenitore-footer-destra i, .contenitore-footer-centrale i{
     margin: 0 8px;
     color: white;
     font-size: 13px;
 }
 /* Barra volume */
 .volume {
-    margin-left: 8px;
+    margin: 0 8px;
     height: 5px;
-	width: 170px;
+	width: 130px;
     background-color: #5A5A5A;
 	border-radius: 10px;
 }
