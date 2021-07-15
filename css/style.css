@@ -278,4 +278,12 @@ footer{
     background-color: #5A5A5A;
 	border-radius: 10px;
 }
-  
+.volume-bianco{
+    background-color: #C1C1C1;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+}
+.volume-bianco.destra{
+    width: 30px;
+}
