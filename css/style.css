@@ -16,28 +16,38 @@ body{
 /* Sidebar */
 .sidebar{
     background-color: black;
-    min-width: 200px;
+    width: 300px;
     position: relative;
 }
-.sidebar-top img{
+/* Logo Spotify */
+.sidebar-top>img{
     width: 140px;
     margin: 20px;
     z-index: 99;
     position: relative;
 }
+/* /Logo Spotify */
+
 .sidebar-top li a{
     color: grey;
     text-decoration: none;
     font-weight: 600;
     font-size: 10px;
     list-style: none;
+    vertical-align: middle;
 }
-.sidebar-top ul i{
-    font-size: 25px;
-    margin: 10px 5px 10px 20px;
+.sidebar-top ul li img{
+    width: 25px;
+    margin: 5px 20px;
+    vertical-align: middle;
 }
+
 .barra-verde{
     border-left: 2px solid rgb(173, 255, 47);
+}
+.playlist-sidebar{
+    height: 300px;
+    overflow-y: auto;
 }
 .playlist-sidebar h3{
     color: white;
@@ -48,9 +58,11 @@ body{
     margin: 10px 20px;
     list-style: none;
 }
+
+/* Sidebar bottom */
 .sidebar-bottom{
     color: grey;
-    margin: 0 20px;
+    margin: 5px 20px;
     font-size: 10px;
     position: absolute;
     bottom: 0;
@@ -60,11 +72,25 @@ body{
     font-weight: 800;
     color: white;
 }
-.sidebar-bottom .fa-arrow-alt-circle-down, .fa-user-circle{
-    padding: 10px 5px 10px 0;
+.sidebar-bottom-download{
+    width: 205px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
 }
-.fa-user-circle{
-    font-size: 20px;
+.sidebar-bottom-profile{
+    padding: 10px 0 5px 0;
+}
+.logo-download{
+    width: 15px;
+    vertical-align: middle;
+}
+.logo-profilo{
+    background-color: #808080;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
 }
 
 /* Section centrale */
@@ -144,7 +170,7 @@ nav ul li a{
 
 /* Footer */
 footer{
-    background-color: #1b1b1b;
+    /* background-color: #1b1b1b; */
     height: 80px;
     z-index: 99;
     position: relative;
