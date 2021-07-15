@@ -36,6 +36,9 @@ body{
     list-style: none;
     vertical-align: middle;
 }
+#color-white{
+    color: white;
+}
 .sidebar-top ul li img{
     width: 25px;
     margin: 5px 20px;
@@ -203,15 +206,15 @@ footer{
     display: flex;
     position: relative;
 }
-.contenitore-footer-sinistra, .footer-right{
+/* Footer sinistra */
+.contenitore-footer-sinistra, .contenitore-footer-destra{
     height: 80px;
     width: 20%;
-}
-.contenitore-footer-sinistra{
     background-color: #282828;
     display: flex;
     align-items: center;
 }
+
 .contenitore-footer-sinistra img{
     width: 40px;
     margin: 0 20px;
@@ -232,11 +235,26 @@ footer{
     color: #646464;
     margin: 0 8px;
 }
+
+/* Footer centrale */
 .footer-center{
     height: 80px;
     width: 60%;
     background-color: orange;
 }
-.footer-right{
-    background-color: hotpink;
+
+/* Footer destra */
+.contenitore-footer-destra i{
+    margin: 0 8px;
+    color: white;
+    font-size: 13px;
 }
+/* Barra volume */
+.volume {
+    margin-left: 8px;
+    height: 5px;
+	width: 170px;
+    background-color: #5A5A5A;
+	border-radius: 10px;
+}
+  
