@@ -10,14 +10,17 @@ body{
 }
 .contenitore-principale{
     display: flex;
-    min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
+    width: 100%;
 }
 
 /* Sidebar */
 .sidebar{
     background-color: black;
-    width: 250px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    justify-content: space-between;
 }
 /* Logo Spotify */
 .sidebar-top>img{
@@ -93,9 +96,6 @@ body{
     color: grey;
     margin: 5px 20px;
     font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background-color: black;
 }
 .sidebar-bottom span{
@@ -125,7 +125,9 @@ body{
 
 /* Section centrale */
 .section-centrale{
-    width: calc(100% - 250px);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     background-color: #151A22;
     overflow-y: auto;
 }
@@ -140,7 +142,8 @@ body{
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
+    padding: 20px 0;
 }
 .contenitore-button{
     padding-right: 5px;
@@ -208,7 +211,7 @@ nav ul li a{
 footer{
     background-color: #282828;
     height: 80px;
-    z-index: 99;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -242,7 +245,7 @@ footer{
 
 /* Footer centrale */
 .contenitore-footer-centrale{
-    height: 80px;
+    min-height: 80px;
     background-color: #282828;
     display: flex;
     align-items: center;
