@@ -54,9 +54,6 @@ body{
     border-left: 2px solid rgb(173, 255, 47);
 }
 /* Sidebar playlist */
-
-/* CREARE OVERFLOW-Y */
-
 .playlist-sidebar{
     flex-grow: 1;
     overflow: hidden;
@@ -176,7 +173,14 @@ nav{
     justify-content: center;
     margin-top: 90px;
 }
-
+nav ul li:first-child::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: rgb(173, 255, 47);
+    width: 35px;
+    margin: auto;
+}
 nav ul li{
     font-size: 13px;
     padding: 20px;
@@ -210,7 +214,17 @@ nav ul li a{
 .contenitore-recenti img{
     width: 100%;
 }
+.contenitore-recenti h5, .contenitore-recenti div{
+    text-align: center;
+    margin-top: 8px;
+}
 
+.contenitore-recenti div, .contenuto-img-centro p{
+    font-size: 13px;
+    color: #727479;
+    font-weight: 600;
+    margin-top: 8px;
+}
 /* Footer */
 footer{
     background-color: #282828;
