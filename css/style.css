@@ -166,7 +166,10 @@ body{
     text-decoration: none;
     color: white;
 }
-
+.section-centrale header button:hover{
+    height: 50px;
+    font-size: 13px;
+}
 /* Nav */
 nav{
     display: flex;
@@ -192,6 +195,12 @@ nav ul li a{
     text-decoration: none;
     color: grey;
 }
+nav ul li:hover a, .playlist-sidebar ul li:hover a,
+.sidebar-top li:hover a, .sidebar-bottom-download:hover, 
+.creazione-playlist:hover, .fa-heart:hover, 
+.fa-folder:hover{
+    color: white;
+}
 
 /* Sezione Recenti */
 .contenuto-img-sopra, .contenuto-img-centro, .contenuto-img-sotto{
@@ -214,6 +223,10 @@ nav ul li a{
 .contenitore-recenti img{
     width: 100%;
 }
+.contenitore-recenti:hover .contenitore-recenti img{
+    background-color: black;
+    width: 190px;
+}
 .contenitore-recenti h5, .contenitore-recenti div{
     text-align: center;
     margin-top: 8px;
@@ -229,7 +242,6 @@ nav ul li a{
 footer{
     background-color: #282828;
     height: 80px;
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -291,6 +303,12 @@ footer{
 }
 .contenitore-footer-centrale-sotto .volume{
     width: 400px;
+}
+.contenitore-footer-centrale .fa-play-circle{
+    margin: 0 15px;
+}
+.contenitore-footer-centrale-sopra:hover .fa-play-circle{
+    font-size: 24px;
 }
 /* Footer destra */
 .contenitore-footer-destra i, .contenitore-footer-centrale i{
