@@ -252,9 +252,23 @@ nav ul li:hover a, .playlist-sidebar ul li:hover a,
     align-items: center;
     justify-content: center;
 }
-.border-radius .contenitore-img-album{
+.contenitore-recenti:hover .contenitore-img-album.background-radius::after{
+    content:"\f144";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
 }
+
 /* Footer */
 footer{
     background-color: #282828;
