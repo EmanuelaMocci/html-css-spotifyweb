@@ -19,8 +19,9 @@ body{
     background-color: black;
     display: flex;
     flex-direction: column;
+    width: 250px;
     padding: 5px;
-    justify-content: space-between;
+    height: 100%;
 }
 /* Logo Spotify */
 .sidebar-top>img{
@@ -46,6 +47,7 @@ body{
     width: 25px;
     margin: 5px 20px;
     vertical-align: middle;
+    height: 100%;
 }
 
 .barra-verde{
@@ -54,13 +56,13 @@ body{
 /* Sidebar playlist */
 
 /* CREARE OVERFLOW-Y */
-/* .playlist-sidebar{
-    height: 350px;
+
+.playlist-sidebar{
+    flex-grow: 1;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    overflow-y: auto;
-} */
+}
 .playlist-sidebar h3{
     color: white;
     margin: 20px;
@@ -70,40 +72,49 @@ body{
     margin: 10px 20px;
     list-style: none;
 }
+.playlist-sidebar ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 10px;
+    font-weight: 600;
+}
 .creazione-playlist{
     font-size: 15px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }
 .creazione-playlist div:first-child{
-    display: inline-block;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     font-size: 30px;
     background-color: lightgray;
     color: black;
-    margin-right: 5px;
+    margin-right: 10px;
     vertical-align: middle;
     text-align: center;
-    line-height: 35px;
+    line-height: 30px;
 }
-.creazione-playlist div:last-child{
-    display: inline-block;
-    vertical-align: middle;
+.playlist-sidebar ul{
+    overflow-y: auto;
+    flex-grow: 1;
 }
 
 /* Sidebar bottom */
 .sidebar-bottom{
     color: grey;
-    margin: 5px 20px;
+    padding: 5px 20px;
     font-size: 10px;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .sidebar-bottom span{
     font-weight: 800;
     color: white;
 }
 .sidebar-bottom-download{
-    width: 205px;
+    width: 150px;
     border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
@@ -125,9 +136,7 @@ body{
 
 /* Section centrale */
 .section-centrale{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+    width: calc(100% - 250px);
     background-color: #151A22;
     overflow-y: auto;
 }
@@ -190,17 +199,12 @@ nav ul li a{
     align-items:flex-start;
     padding-top: 30px;
 }
-.border-radius{
-    height: 190px;
-    width: 190px;
+.border-radius img{
     border-radius: 50%;
 }
 .contenitore-recenti{
-    height: 190px;
     width: 190px;
     margin-right: 20px;
-}
-.prima-riga{
     width: calc((100% / 6) - 20px);
 }
 .contenitore-recenti img{
@@ -211,10 +215,11 @@ nav ul li a{
 footer{
     background-color: #282828;
     height: 80px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     position: relative;
+    z-index: 99;
 }
 /* Footer sinistra */
 .contenitore-footer-sinistra, .contenitore-footer-destra{
