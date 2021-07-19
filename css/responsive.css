@@ -50,6 +50,7 @@
     footer .contenitore-footer-sinistra .contenitore-icone-sinistra a{
         display: flex;
         flex-wrap: wrap;
+        text-decoration: none;
     }
     footer .contenitore-footer-sinistra{
         width: calc(100% / 3);
@@ -62,8 +63,11 @@
     }
     nav ul{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap; 
+    }
+    nav ul li{
+        width: calc(100% / 3);
+        margin: auto;
     }
 }
 
