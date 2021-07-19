@@ -212,14 +212,12 @@ nav ul li:hover a, .playlist-sidebar ul li:hover a,
 }
 .contenitore-img{
     display: flex;
-    align-items:flex-start;
     padding-top: 30px;
 }
 .border-radius img{
     border-radius: 50%;
 }
 .contenitore-recenti{
-    width: 190px;
     margin-right: 20px;
     width: calc((100% / 6) - 20px);
 }
@@ -322,7 +320,7 @@ footer{
     font-weight: bold;
     padding: 10px;
 }
-.contenitore-footer-centrale-sotto .volume{
+.contenitore-footer-centrale-sotto .durata-minuti{
     width: 400px;
 }
 .contenitore-footer-centrale .fa-play-circle{
@@ -338,14 +336,13 @@ footer{
     font-size: 13px;
 }
 /* Barra volume */
-.volume{
+.durata-minuti{
     margin: 0 8px;
     height: 5px;
-	width: 130px;
     background-color: #5A5A5A;
 	border-radius: 10px;
 }
-.volume-bianco{
+.durata-minuti-bianco{
     background-color: #C1C1C1;
     width: 100px;
     height: 5px;
