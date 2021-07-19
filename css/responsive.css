@@ -19,6 +19,10 @@
     footer .contenitore-footer-centrale-sotto .durata-minuti{
         width: 150px;
     }
+    footer .contenitore-footer-centrale-sotto{
+        display: flex;
+        justify-content: center;
+    }
 }   
  
 /* Cellulare s */
@@ -33,6 +37,10 @@
         margin-right: 10px;
         width: calc((100% / 2) - 10px);
     }
+    footer .contenitore-footer-centrale-sotto{
+        display: flex;
+        justify-content: center;
+    }
     footer .contenitore-footer-centrale-sotto .durata-minuti{
         width: 100px;
     }
@@ -42,6 +50,15 @@
     footer .contenitore-footer-sinistra .contenitore-icone-sinistra a{
         display: flex;
         flex-wrap: wrap;
+    }
+    footer .contenitore-footer-sinistra{
+        width: calc(100% / 3);
+    }
+    footer .contenitore-footer-centrale{
+        width: calc(100% / 3);
+    }
+    footer .contenitore-footer-destra{
+        width: calc(100% / 3);
     }
     nav ul{
         display: flex;

@@ -262,7 +262,7 @@ footer{
     background-color: #282828;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     position: relative;
     z-index: 99;
 }
@@ -270,6 +270,7 @@ footer{
 .contenitore-footer-sinistra, .contenitore-footer-destra{
     display: flex;
     align-items: center;
+    width: 20%;
 }
 
 .contenitore-footer-sinistra img{
@@ -295,6 +296,7 @@ footer{
 
 /* Footer centrale */
 .contenitore-footer-centrale{
+    width: 60%;
     min-height: 80px;
     background-color: #282828;
     display: flex;
@@ -320,7 +322,7 @@ footer{
     font-weight: bold;
     padding: 10px;
 }
-.contenitore-footer-centrale-sotto .durata-minuti{
+.contenitore-footer-centrale-sotto{
     width: 400px;
 }
 .contenitore-footer-centrale .fa-play-circle{
@@ -335,14 +337,26 @@ footer{
     color: white;
     font-size: 13px;
 }
+.contenitore-footer-destra{
+    display: flex;
+    justify-content: flex-end;
+}
 /* Barra volume */
+.volume{
+    width: 100px;
+    background-color: #5A5A5A;
+    margin: 0 8px;
+    height: 5px;
+    border-radius: 10px;
+}
 .durata-minuti{
+    width: 100%;
     margin: 0 8px;
     height: 5px;
     background-color: #5A5A5A;
 	border-radius: 10px;
 }
-.durata-minuti-bianco{
+.durata-minuti-bianco, .volume-bianco{
     background-color: #C1C1C1;
     width: 100px;
     height: 5px;
