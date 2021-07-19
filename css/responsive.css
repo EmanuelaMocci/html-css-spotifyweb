@@ -19,26 +19,11 @@
         display: flex;
         justify-content: center;
     }
-    nav ul li{
-        width: calc((100% / 5) - 10px);
-        text-align: center;
-        margin: 0 5px;
-    }
     nav ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    /* nav ul{
-        display: flex; 
-        justify-content: space-between;
-    }
-    nav ul li{
-        width: calc(100% / 5);
-        margin: auto;
-        text-align: center; 
-    } */
     footer .contenitore-footer-sinistra,
     footer .contenitore-footer-centrale,
     footer .contenitore-footer-destra{

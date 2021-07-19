@@ -195,6 +195,10 @@ nav ul li a{
     text-decoration: none;
     color: grey;
 }
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 /* Hover */
 nav ul li:hover a, .playlist-sidebar ul li:hover a,
 .sidebar-top li:hover a, .sidebar-bottom-download:hover, 
