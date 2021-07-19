@@ -88,12 +88,14 @@
 }
 
 /* Cellulare xs */
-@media screen and (min-width: 480px) and (max-width: 600px){
+@media screen and (max-width: 600px){
     .contenuto-img-sopra .contenitore-img{
         display: flex;
         flex-wrap: wrap;
     }
-    .contenuto-img-sopra .contenitore-img .contenitore-recenti{
+    .contenuto-img-sopra .contenitore-img .contenitore-recenti,
+    .contenuto-img-centro .contenitore-img .contenitore-recenti,
+    .contenuto-img-sotto .contenitore-img .contenitore-recenti{
         margin-right: 10px;
         width: calc((100% / 2) - 10px);
     }
@@ -105,37 +107,39 @@
         color: white;
         width: 30px;
     }
-    .contenitore-principale .sidebar .sidebar-top ul li a span,
-    .contenitore-principale .sidebar .playlist-sidebar{
+    body .contenitore-principale .sidebar .sidebar-top ul li a span,
+    body .contenitore-principale .sidebar .playlist-sidebar{
         display: none;
     }
-    .contenitore-principale .sidebar .sidebar-top{
+    body .contenitore-principale .sidebar .sidebar-top{
         height: 100%;
     }
-    .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-download span,
-    .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-profile span{
+    body .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-download span,
+    body .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-profile span{
         display: none;
     }
-    .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-download{
+    body .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-download{
         border-bottom: none;
     }
-    .contenitore-principale .sidebar{
+    body .contenitore-principale .sidebar{
         width: 80px;
     }
-    .section-centrale{
+    body .contenitore-principale .section-centrale{
+        width: calc(100% - 80px);
+    }
+    body footer .contenitore-footer-sinistra,
+    body footer .contenitore-footer-destra{
+        width: calc((100% / 2) - 20px);
+        margin: 0 10px 10px 10px;
+    }
+    body footer .contenitore-footer-centrale{
         width: 100%;
+        order: -1;
     }
-    footer .contenitore-footer-centrale-sotto .durata-minuti{
-        width: 10px;
-    }
-    footer .contenitore-footer-centrale-sotto{
-        width: 50px;
+    body footer{
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
+        height: 160px;
     }
-    footer .contenitore-footer-sinistra,
-    footer .contenitore-footer-centrale,
-    footer .contenitore-footer-destra{
-        width: calc(100% / 3);
-    }
+
 }
