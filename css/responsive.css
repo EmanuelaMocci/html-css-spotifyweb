@@ -27,7 +27,9 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .contenuto-img-sopra .contenitore-img .contenitore-recenti{
+    .contenuto-img-sopra .contenitore-img .contenitore-recenti,
+    .contenuto-img-centro .contenitore-img .contenitore-recenti,
+    .contenuto-img-sotto .contenitore-img .contenitore-recenti{
         margin-right: 10px;
         width: calc((100% / 2) - 10px);
     }
