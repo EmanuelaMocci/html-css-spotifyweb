@@ -30,6 +30,9 @@ body{
     z-index: 99;
     position: relative;
 }
+.sidebar .sidebar-top .logo-xs{
+    display: none;
+}
 
 /* Sidebar top */
 .sidebar-top li a{

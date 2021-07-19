@@ -12,6 +12,9 @@
         margin-right: 10px;
         width: calc((100% / 4) - 10px);
     }
+    .sidebar .sidebar-top .logo-xs{
+        display: none;
+    }
     footer .contenitore-footer-centrale-sotto .durata-minuti{
         width: 150px;
     }
@@ -33,7 +36,6 @@
         display: flex;
         margin-right: 10px;
     }
-    
 }   
  
 /* Cellulare s */
@@ -47,6 +49,9 @@
     .contenuto-img-sotto .contenitore-img .contenitore-recenti{
         margin-right: 10px;
         width: calc((100% / 2) - 10px);
+    }
+    .sidebar .sidebar-top .logo-xs{
+        display: none;
     }
     footer .contenitore-footer-centrale-sotto{
         display: flex;
@@ -92,7 +97,45 @@
         margin-right: 10px;
         width: calc((100% / 2) - 10px);
     }
+    .sidebar .sidebar-top .logo{
+        display: none;
+    }
+    body .contenitore-principale .sidebar .sidebar-top .logo-xs{
+        display: block;
+        color: white;
+        width: 30px;
+    }
+    .contenitore-principale .sidebar .sidebar-top ul li a span,
+    .contenitore-principale .sidebar .playlist-sidebar{
+        display: none;
+    }
+    .contenitore-principale .sidebar .sidebar-top{
+        height: 100%;
+    }
+    .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-download span,
+    .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-profile span{
+        display: none;
+    }
+    .contenitore-principale .sidebar .sidebar-bottom .sidebar-bottom-download{
+        border-bottom: none;
+    }
+    .contenitore-principale .sidebar{
+        width: 80px;
+    }
+    .section-centrale{
+        width: 100%;
+    }
     footer .contenitore-footer-centrale-sotto .durata-minuti{
+        width: 10px;
+    }
+    footer .contenitore-footer-centrale-sotto{
         width: 50px;
+        display: flex;
+        align-items: center;
+    }
+    footer .contenitore-footer-sinistra,
+    footer .contenitore-footer-centrale,
+    footer .contenitore-footer-destra{
+        width: calc(100% / 3);
     }
 }
