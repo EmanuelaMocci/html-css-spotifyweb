@@ -79,6 +79,7 @@ body{
     font-weight: 600;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 .creazione-playlist div:first-child{
     height: 30px;
@@ -151,11 +152,11 @@ body{
     padding: 20px 0;
 }
 .contenitore-button{
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .section-centrale header button{
     border-radius: 30px;
-    padding: 10px 25px;
+    padding: 10px 30px;
     font-size: 10px;
     background-color: transparent;
     border: 1px solid white;
@@ -166,8 +167,7 @@ body{
     color: white;
 }
 .section-centrale header button:hover{
-    height: 50px;
-    font-size: 13px;
+    transform: scale(1.1);
 }
 /* Nav */
 nav{
@@ -200,6 +200,9 @@ nav ul li:hover a, .playlist-sidebar ul li:hover a,
 .creazione-playlist:hover, .fa-heart:hover, 
 .fa-folder:hover{
     color: white;
+}
+.creazione-playlist:hover div:first-child{
+    background-color: white;
 }
 
 /* Sezione Recenti */
@@ -326,7 +329,7 @@ footer{
     margin: 0 15px;
 }
 .contenitore-footer-centrale-sopra:hover .fa-play-circle{
-    font-size: 24px;
+    transform: scale(1.2);
 }
 /* Footer destra */
 .contenitore-footer-destra i, .contenitore-footer-centrale i{
